@@ -11,7 +11,7 @@
 
         public Bill() { }
 
-        public Bill(DateTime dueDate, DateTime issueDate, decimal price, 
+        public Bill(DateTime dueDate, DateTime issueDate, decimal price,
             bool isCancelled, Client client, ServiceProvider provider)
         {
             DueDate = dueDate;
@@ -27,10 +27,10 @@
             Client client, ServiceProvider provider) =>
             new()
             {
-                DueDate = dueDate, 
-                IssueDate = issueDate, 
-                Price = price, 
-                IsCancelled = isCancelled, 
+                DueDate = dueDate,
+                IssueDate = issueDate,
+                Price = price,
+                IsCancelled = isCancelled,
                 Client = client,
                 Provider = provider
             };

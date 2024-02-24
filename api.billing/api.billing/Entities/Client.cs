@@ -15,7 +15,7 @@
         public static Client Create(string document, string name) =>
         new()
         {
-            Document = document, 
+            Document = document,
             Name = name
         };
     }

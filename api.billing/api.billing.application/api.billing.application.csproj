@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Folder Include="Automapper\" />
+    <Folder Include="ViewModel\" />
     <Folder Include="Services\Interfaces\" />
   </ItemGroup>
 
