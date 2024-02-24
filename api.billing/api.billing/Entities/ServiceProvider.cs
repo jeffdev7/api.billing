@@ -13,5 +13,15 @@
             Address = address;
         }
         public ServiceProvider(){}
+
+        public static ServiceProvider Create(string document, 
+            string name, 
+            string address) =>
+            new()
+            {
+                Document = document, 
+                Name = name, 
+                Address = address
+            };
     }
 }

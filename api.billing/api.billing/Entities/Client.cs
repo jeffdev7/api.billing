@@ -11,5 +11,12 @@
             Name = name;
         }
         public Client() { }
+
+        public static Client Create(string document, string name) =>
+        new()
+        {
+            Document = document, 
+            Name = name
+        };
     }
 }

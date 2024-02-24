@@ -21,5 +21,18 @@
             Client = client;
             Provider = provider;
         }
+
+        public static Bill Create(DateTime dueDate, DateTime issueDate,
+            decimal price, bool isCancelled,
+            Client client, ServiceProvider provider) =>
+            new()
+            {
+                DueDate = dueDate, 
+                IssueDate = issueDate, 
+                Price = price, 
+                IsCancelled = isCancelled, 
+                Client = client,
+                Provider = provider
+            };
     }
 }
