@@ -1,6 +1,6 @@
 ﻿namespace api.billing.domain.Entities
 {
-    public class ServiceProvider: BaseEntity
+    public class ServiceProvider : BaseEntity
     {
         public string Document { get; set; }
         public string Name { get; set; }
@@ -12,6 +12,16 @@
             Name = name;
             Address = address;
         }
-        public ServiceProvider(){}
+        public ServiceProvider() { }
+
+        public static ServiceProvider Create(string document,
+            string name,
+            string address) =>
+            new()
+            {
+                Document = document,
+                Name = name,
+                Address = address
+            };
     }
 }
