@@ -8,8 +8,11 @@
 
   <ItemGroup>
     <Folder Include="Automapper\" />
-    <Folder Include="ViewModel\" />
     <Folder Include="Services\Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\api.billing\api.billing.domain.csproj" />
   </ItemGroup>
 
 </Project>
